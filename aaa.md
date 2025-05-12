@@ -1,3 +1,4 @@
-jika	saaya	masdfasdf	asdfa	asdf
-	asdf	adsf	adsf	asdf
-	asdf	asdf	asdfa	asdf
+|nama|nomor|deskripsi|
+|:-|:-|:-|
+|saya|13|suka suka saya lah kan deskripsi saya |
+|||14|ohhh|
