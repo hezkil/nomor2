@@ -1,0 +1,45 @@
+| Source | Library | Function Utilized | Times Used |
+|--------|---------|-------------------|------------|
+| memmap.c | io_uring/memmap.c | memchr_inv | 1 |
+| | io_uring/io-wq.c | ERR_PTR | 11 |
+| | io_uring/alloc_cache.c | memset | 1 |
+| | io_uring/filetable.c | check_add_overflow | 3 |
+| | io_uring/memmap.c | unpin_user_pages | 2 |
+| | io_uring/io_uring.c | io_region_get_ptr | 1 |
+| | io_uring/memmap.c | get_order | 1 |
+| | io_uring/memmap.c | io_pbuf_get_region | 1 |
+| | io_uring/memmap.c | vmap | 1 |
+| | io_uring/memmap.c | io_mmap_get_region | 2 |
+| | io_uring/memmap.c | mm_get_unmapped_area | 1 |
+| | io_uring/memmap.c | io_region_allocate_pages | 1 |
+| | io_uring/memmap.c | io_region_validate_mmap | 1 |
+| | io_uring/io_uring.c | io_create_region | 1 |
+| | io_uring/memmap.c | alloc_pages | 1 |
+| | io_uring/io_uring.c | guard | 4 |
+| | io_uring/memmap.c | vm_flags_set | 1 |
+| | io_uring/memmap.c | alloc_pages_bulk_node | 1 |
+| | io_uring/memmap.c | io_check_coalesce_buffer | 1 |
+| | io_uring/memmap.c | vm_insert_pages | 1 |
+| | io_uring/cancel.c | lockdep_assert_held | 1 |
+| | io_uring/io_uring.c | memcpy | 2 |
+| | io_uring/memmap.c | io_uring_validate_mmap_request | 3 |
+| | io_uring/memmap.c | vunmap | 1 |
+| | io_uring/alloc_cache.c | kvfree | 3 |
+| | io_uring/memmap.c | page_address | 2 |
+| | io_uring/eventfd.c | PTR_ERR | 3 |
+| | io_uring/memmap.c | io_mem_alloc_compound | 1 |
+| | io_uring/advise.c | WARN_ON_ONCE | 4 |
+| | io_uring/eventfd.c | IS_ERR | 5 |
+| | io_uring/memmap.c | pin_user_pages_fast | 1 |
+| | io_uring/memmap.c | is_nommu_shared_mapping | 1 |
+| | io_uring/memmap.c | __io_unaccount_mem | 1 |
+| | io_uring/memmap.c | __io_account_mem | 1 |
+| | io_uring/memmap.c | io_region_mmap | 1 |
+| | io_uring/fdinfo.c | min | 1 |
+| | io_uring/memmap.c | io_region_pin_pages | 1 |
+| | io_uring/memmap.c | io_pin_pages | 1 |
+| | io_uring/memmap.c | io_region_is_set | 1 |
+| | io_uring/io_uring.c | io_free_region | 1 |
+| | io_uring/memmap.c | io_region_init_ptr | 1 |
+| | io_uring/memmap.c | release_pages | 2 |
+| | io_uring/alloc_cache.c | kvmalloc_array | 2 |

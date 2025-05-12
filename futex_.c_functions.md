@@ -1,0 +1,40 @@
+| Source | Library | Function Utilized | Times Used |
+|--------|---------|-------------------|------------|
+| futex.c | io_uring/advise.c | io_req_set_res | 8 |
+| | io_uring/futex.c | io_req_task_work_add | 3 |
+| | io_uring/futex.c | io_cancel_remove_all | 1 |
+| | io_uring/futex.c | kcalloc | 1 |
+| | io_uring/futex.c | futex_unqueue_multiple | 1 |
+| | io_uring/futex.c | __set_current_state | 1 |
+| | io_uring/futex.c | futex_unqueue | 1 |
+| | io_uring/futex.c | futex_wait_multiple_setup | 1 |
+| | io_uring/futex.c | io_cache_alloc | 1 |
+| | io_uring/cancel.c | io_ring_submit_unlock | 4 |
+| | io_uring/cancel.c | unlikely | 5 |
+| | io_uring/advise.c | READ_ONCE | 6 |
+| | io_uring/alloc_cache.h | kfree | 4 |
+| | io_uring/futex.c | futex_wake | 1 |
+| | io_uring/cancel.c | io_ring_submit_lock | 2 |
+| | io_uring/futex.c | io_req_task_complete | 1 |
+| | io_uring/cancel.h | io_cancel_remove | 1 |
+| | io_uring/futex.c | io_cache_free | 1 |
+| | io_uring/filetable.h | test_bit | 1 |
+| | io_uring/futex.c | futex_validate_input | 2 |
+| | io_uring/futex.c | futex_queue | 1 |
+| | io_uring/futex.c | io_futexv_claim | 2 |
+| | io_uring/cancel.c | container_of | 1 |
+| | io_uring/futex.c | io_alloc_cache_free | 1 |
+| | io_uring/advise.c | io_kiocb_to_cmd | 8 |
+| | io_uring/futex.c | __futex_wake_mark | 2 |
+| | io_uring/futex.c | futex_wait_setup | 1 |
+| | io_uring/cancel.c | hlist_del_init | 2 |
+| | io_uring/futex.c | test_and_set_bit_lock | 1 |
+| | io_uring/futex.c | futex2_to_flags | 1 |
+| | io_uring/futex.c | hlist_add_head | 2 |
+| | io_uring/epoll.c | u64_to_user_ptr | 2 |
+| | io_uring/futex.c | futex_parse_waitv | 1 |
+| | io_uring/alloc_cache.h | io_alloc_cache_init | 1 |
+| | io_uring/futex.c | io_tw_lock | 2 |
+| | io_uring/futex.c | futex_flags_valid | 1 |
+| | io_uring/futex.c | __io_futex_complete | 2 |
+| | io_uring/advise.c | req_set_fail | 3 |

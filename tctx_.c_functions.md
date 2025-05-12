@@ -1,0 +1,46 @@
+| Source | Library | Function Utilized | Times Used |
+|--------|---------|-------------------|------------|
+| tctx.c | io_uring/io_uring.c | xa_init | 1 |
+| | io_uring/eventfd.c | IS_ERR | 1 |
+| | io_uring/sqpoll.c | io_uring_alloc_task_context | 1 |
+| | io_uring/tctx.c | percpu_counter_destroy | 2 |
+| | io_uring/eventfd.c | PTR_ERR | 1 |
+| | io_uring/eventfd.c | refcount_set | 1 |
+| | io_uring/kbuf.c | list_add | 1 |
+| | io_uring/fdinfo.c | xa_for_each | 2 |
+| | io_uring/fdinfo.c | min | 1 |
+| | io_uring/advise.c | WARN_ON_ONCE | 5 |
+| | io_uring/cancel.c | copy_from_user | 2 |
+| | io_uring/io_uring.c | init_waitqueue_head | 2 |
+| | io_uring/io-wq.c | cond_resched | 1 |
+| | io_uring/io_uring.c | list_del | 1 |
+| | io_uring/io_uring.c | io_uring_del_tctx_node | 1 |
+| | io_uring/io-wq.c | kzalloc | 2 |
+| | io_uring/tctx.c | io_ring_add_registered_fd | 1 |
+| | io_uring/cancel.c | fput | 5 |
+| | io_uring/io_uring.c | io_ring_add_registered_file | 1 |
+| | io_uring/eventfd.c | atomic_set | 2 |
+| | io_uring/alloc_cache.c | kmalloc | 1 |
+| | io_uring/cancel.c | mutex_unlock | 5 |
+| | io_uring/tctx.c | io_wq_create | 1 |
+| | io_uring/io_uring.c | array_index_nospec | 2 |
+| | io_uring/io-wq.c | list_empty | 1 |
+| | io_uring/io_uring.c | copy_to_user | 1 |
+| | io_uring/tctx.c | num_online_cpus | 1 |
+| | io_uring/tctx.c | percpu_counter_init | 1 |
+| | io_uring/cancel.c | unlikely | 4 |
+| | io_uring/register.c | io_wq_max_workers | 1 |
+| | io_uring/alloc_cache.h | kfree | 5 |
+| | io_uring/io_uring.c | init_llist_head | 1 |
+| | io_uring/kbuf.c | xa_err | 1 |
+| | io_uring/cancel.c | fget | 1 |
+| | io_uring/cancel.c | mutex_lock | 4 |
+| | io_uring/io-wq.c | ERR_PTR | 1 |
+| | io_uring/kbuf.c | xa_store | 1 |
+| | io_uring/io-wq.c | init_task_work | 1 |
+| | io_uring/io_uring.c | xa_load | 1 |
+| | io_uring/tctx.c | io_wq_put_and_exit | 1 |
+| | io_uring/filetable.c | io_is_uring_fops | 1 |
+| | io_uring/kbuf.c | xa_erase | 1 |
+| | io_uring/io_uring.c | __io_uring_add_tctx_node | 2 |
+| | io_uring/tctx.c | io_init_wq_offload | 1 |
