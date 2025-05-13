@@ -362,9 +362,9 @@
 | | io_uring/napi.c | io_napi_busy_loop_timeout | 1 |
 | | io_uring/io_uring.c | guard | 3 |
 | | io_uring/io_uring.c | copy_to_user | 2 |
-| napi.h | io_uring/io-wq.c | list_empty | 1 |
-| | io_uring/napi.h | io_napi | 1 |
-| | io_uring/napi.c | __io_napi_add_id | 1 |
-| | io_uring/napi.h | __io_napi_busy_loop | 1 |
-| | io_uring/advise.c | READ_ONCE | 2 |
-| | io_uring/napi.h | sock_from_file | 1 |
+| napi.h | linux/include/linux/list.h | list_empty | 1 |
+| | linux/io_uring/napi.h | io_napi | 1 |
+| | linux/io_uring/napi.c | __io_napi_add_id | 1 |
+| | linux/io_uring/napi.h | __io_napi_busy_loop | 1 |
+| | linux/include/asm-generic/rwonce.h | READ_ONCE | 2 |
+| | linux/net/socket.c | sock_from_file | 1 |
