@@ -499,3 +499,48 @@
 | | linux/io_uring/io_uring.h | io_get_task_refs | 1 |
 | | inux/include/linux/skbuff.h | skb_zcopy | 1 |
 | | linux/io_uring/io_uring.c | io_req_task_complete | 1 |
+| notif.h | linux/fs/nfs/callback_proc.c | __must_hold | 1 |
+| | linux/io_uring/notif.h | io_notif_to_data | 2 |
+| | linux/include/linux/io_uring_types.h | io_kiocb_to_cmd | 1 |
+| | linux/io_uring/notif.c | io_tx_ubuf_complete | 1 |
+| | linux/io_uring/memmap.c | __io_account_mem | 1 |
+| opdef.c | linux/include/asm-generic/bug.h | BUG_ON | 2 |
+| | linux/include/asm-generic/bug.h | WARN_ON_ONCE | 2 |
+| | linux/include/linux/build_bug.h | BUILD_BUG_ON | 2 |
+| | linux/driv...4xxx/adf_4xxx_hw_data.c | ARRAY_SIZE | 3 |
+| openclose.c | linux/include/linux/err.h | PTR_ERR | 2 |
+| | linux/include/linux/kernel.h | u64_to_user_ptr | 2 |
+| | linux/fs/namei.c | getname | 1 |
+| | linux/io_uring/openclose.c | io_close_fixed | 1 |
+| | linux/include/linux/spinlock.h | spin_unlock | 3 |
+| | linux/io_uring/openclose.c | force_o_largefile | 1 |
+| | linux/include/asm-generic/bug.h | WARN_ON_ONCE | 1 |
+| | linux/io_uring/io_uring.h | io_ring_submit_unlock | 1 |
+| | linux/io_uring/io_uring.h | io_req_set_res | 3 |
+| | linux/fs/open.c | build_open_flags | 1 |
+| | linux/io_uring/openclose.c | io_openat2 | 1 |
+| | linux/io_uring/openclose.c | receive_fd | 1 |
+| | linux/fs/file.c | put_unused_fd | 1 |
+| | linux/fs/open.c | filp_close | 1 |
+| | linux/fs/file.c | fd_install | 1 |
+| | linux/fs/namei.c | putname | 2 |
+| | linux/include/linux/sched/signal.h | rlimit | 1 |
+| | linux/io_uring/io_uring.h | req_set_fail | 3 |
+| | linux/include/linux/spinlock.h | spin_lock | 1 |
+| | linux/io_uring/filetable.c | io_fixed_fd_install | 1 |
+| | linux/fs/namei.c | do_filp_open | 1 |
+| | linux/include/linux/compiler.h| unlikely | 2 |
+| | linux/fs/file.c | __get_unused_fd_flags | 1 |
+| | linux/io_uring/openclose.c | io_openat_force_async | 2 |
+| | linux/io_uring/io_uring.h | io_ring_submit_lock | 1 |
+| | linux/io_uring/openclose.c | file_close_fd_locked | 1 |
+| | linux/include/linux/err.h | IS_ERR | 2 |
+| | linux/include/linux/io_uring.h | io_is_uring_fops | 1 |
+| | linux/include/linux/uaccess.h | copy_struct_from_user | 1 |
+| | linux/include/linux/io_uring_types.h| io_kiocb_to_cmd | 10 |
+| | linux/include/linux/fdtable.h | files_lookup_fd_locked | 1 |
+| | linux/fs/open.c | build_open_how | 1 |
+| | linux/io_uring/filetable.c| io_fixed_fd_remove | 1 |
+| | linux/include/asm-generic/rwonce.h | READ_ONCE | 10 |
+| | linux/io_uring/openclose.c | __io_openat_prep | 2 |
+| | linux/io_uring/openclose.c | __io_close_fixed | 1 |
