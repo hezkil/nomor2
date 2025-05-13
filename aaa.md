@@ -878,3 +878,470 @@
 | | io_uring/rw.c | io_kiocb_update_pos | 2 |
 | | io_uring/rw.c | io_complete_rw_iopoll | 1 |
 | | io_uring/net.c | io_import_reg_vec | 1 |
+| splice.c | linux/io_uring/io_uring.h | io_ring_submit_unlock | 1 |
+| splice.c | linux/io_uring/io_uring.h | io_file_get_normal | 1 |
+| splice.c | linux/include/linux/file.h | fput | 2 |
+| splice.c | linux/io_uring/io_uring.h | READ_ONCE | 6 |
+| splice.c | linux/io_uring/io_uring.h | io_slot_file | 1 |
+| splice.c | linux/io_uring/io_uring.h | io_ring_submit_lock | 1 |
+| splice.c | linux/io_uring/io_uring.h | req_set_fail | 2 |
+| splice.c | linux/io_uring/resources.h | io_put_rsrc_node | 1 |
+| splice.c | linux/io_uring/splice.c | __io_splice_prep | 2 |
+| splice.c | linux/io_uring/splice.c | io_splice_get_file | 2 |
+| splice.c | linux/include/linux/compiler.h | unlikely | 1 |
+| splice.c | linux/io_uring/io_uring.h | io_req_set_res | 2 |
+| splice.c | linux/io_uring/io_uring.h | io_kiocb_to_cmd | 6 |
+| splice.c | linux/fs/splice.c | do_tee | 1 |
+| splice.c | linux/io_uring/resources.h | io_rsrc_node_lookup | 1 |
+| splice.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 2 |
+| splice.c | linux/fs/splice.c | do_splice | 1 |
+| statx.c | linux/fs/namei.h | getname_uflags | 1 |
+| statx.c | linux/include/linux/err.h | IS_ERR | 1 |
+| statx.c | linux/fs/stat.c | do_statx | 1 |
+| statx.c | linux/fs/namei.h | putname | 1 |
+| statx.c | linux/include/linux/err.h | PTR_ERR | 1 |
+| statx.c | linux/io_uring/io_uring.h | io_kiocb_to_cmd | 3 |
+| statx.c | linux/include/linux/uaccess.h | u64_to_user_ptr | 2 |
+| statx.c | linux/io_uring/io_uring.h | io_req_set_res | 1 |
+| statx.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 1 |
+| statx.c | linux/include/linux/compiler.h | READ_ONCE | 5 |
+| sync.c | linux/include/linux/compiler.h | unlikely | 3 |
+| sync.c | linux/io_uring/io_uring.h | io_req_set_res | 3 |
+| sync.c | linux/fs/open.c | vfs_fallocate | 1 |
+| sync.c | linux/fs/sync.c | vfs_fsync_range | 1 |
+| sync.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 3 |
+| sync.c | linux/fs/sync.c | sync_file_range | 1 |
+| sync.c | linux/include/linux/compiler.h | READ_ONCE | 9 |
+| sync.c | linux/fs/notify/fdnotify.c | fsnotify_modify | 1 |
+| sync.c | linux/io_uring/io_uring.h | io_kiocb_to_cmd | 6 |
+| tctx.c | linux/include/linux/xarray.h | xa_init | 1 |
+| tctx.c | linux/include/linux/err.h | IS_ERR | 1 |
+| tctx.c | linux/io_uring/sqpoll.c | io_uring_alloc_task_context | 1 |
+| tctx.c | linux/include/linux/percpu_counter.h | percpu_counter_destroy | 2 |
+| tctx.c | linux/include/linux/err.h | PTR_ERR | 1 |
+| tctx.c | linux/include/linux/refcount.h | refcount_set | 1 |
+| tctx.c | linux/include/linux/list.h | list_add | 1 |
+| tctx.c | linux/include/linux/xarray.h | xa_for_each | 2 |
+| tctx.c | linux/include/linux/minmax.h | min | 1 |
+| tctx.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 5 |
+| tctx.c | linux/include/linux/uaccess.h | copy_from_user | 2 |
+| tctx.c | linux/include/linux/wait.h | init_waitqueue_head | 2 |
+| tctx.c | linux/include/linux/sched.h | cond_resched | 1 |
+| tctx.c | linux/include/linux/list.h | list_del | 1 |
+| tctx.c | linux/io_uring/io_uring.h | io_uring_del_tctx_node | 1 |
+| tctx.c | linux/include/linux/slab.h | kzalloc | 2 |
+| tctx.c | linux/io_uring/io_uring.h | io_ring_add_registered_fd | 1 |
+| tctx.c | linux/include/linux/file.h | fput | 5 |
+| tctx.c | linux/io_uring/io_uring.h | io_ring_add_registered_file | 1 |
+| tctx.c | linux/include/linux/atomic.h | atomic_set | 2 |
+| tctx.c | linux/include/linux/slab.h | kmalloc | 1 |
+| tctx.c | linux/include/linux/mutex.h | mutex_unlock | 5 |
+| tctx.c | linux/io_uring/io-wq.h | io_wq_create | 1 |
+| tctx.c | linux/include/linux/nospec.h | array_index_nospec | 2 |
+| tctx.c | linux/include/linux/list.h | list_empty | 1 |
+| tctx.c | linux/include/linux/uaccess.h | copy_to_user | 1 |
+| tctx.c | linux/kernel/cpu.c | num_online_cpus | 1 |
+| tctx.c | linux/include/linux/percpu_counter.h | percpu_counter_init | 1 |
+| tctx.c | linux/include/linux/compiler.h | unlikely | 4 |
+| tctx.c | linux/io_uring/io-wq.h | io_wq_max_workers | 1 |
+| tctx.c | linux/include/linux/slab.h | kfree | 5 |
+| tctx.c | linux/include/linux/llist.h | init_llist_head | 1 |
+| tctx.c | linux/include/linux/xarray.h | xa_err | 1 |
+| tctx.c | linux/include/linux/file.h | fget | 1 |
+| tctx.c | linux/include/linux/mutex.h | mutex_lock | 4 |
+| tctx.c | linux/include/linux/err.h | ERR_PTR | 1 |
+| tctx.c | linux/include/linux/xarray.h | xa_store | 1 |
+| tctx.c | linux/kernel/task_work.c | init_task_work | 1 |
+| tctx.c | linux/include/linux/xarray.h | xa_load | 1 |
+| tctx.c | linux/io_uring/io-wq.h | io_wq_put_and_exit | 1 |
+| tctx.c | linux/io_uring/filetable.h | io_is_uring_fops | 1 |
+| tctx.c | linux/include/linux/xarray.h | xa_erase | 1 |
+| tctx.c | linux/io_uring/io_uring.h | __io_uring_add_tctx_node | 2 |
+| tctx.c | linux/io_uring/io-wq.h | io_init_wq_offload | 1 |
+| timeout.h | linux/io_uring/timeout.h | __io_disarm_linked_timeout | 1 |
+| truncate.c | linux/fs/open.c | do_ftruncate | 1 |
+| truncate.c | linux/include/linux/compiler.h | READ_ONCE | 1 |
+| truncate.c | linux/io_uring/io_uring.h | io_req_set_res | 1 |
+| truncate.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 1 |
+| truncate.c | linux/io_uring/io_uring.h | io_kiocb_to_cmd | 2 |
+| uring_cmd.c | linux/io_uring/alloc_cache.h | io_alloc_cache_vec_kasan | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_is_compat | 1 |
+| uring_cmd.c | linux/include/linux/string.h | memcpy | 1 |
+| uring_cmd.c | linux/io_uring/uring_cmd.h | io_uring_cmd_setsockopt | 1 |
+| uring_cmd.c | linux/include/linux/socket.h | USER_SOCKPTR | 2 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_req_set_res | 2 |
+| uring_cmd.c | linux/kernel/task_work.c | task_work_cb | 1 |
+| uring_cmd.c | linux/include/linux/list.h | hlist_for_each_entry_safe | 1 |
+| uring_cmd.c | linux/include/linux/socket.h | KERNEL_SOCKPTR | 1 |
+| uring_cmd.c | linux/io_uring/net.h | io_prep_reg_iovec | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | __io_req_task_work_add | 1 |
+| uring_cmd.c | linux/include/linux/compiler.h | smp_store_release | 1 |
+| uring_cmd.c | linux/include/linux/build_bug.h | BUILD_BUG_ON | 1 |
+| uring_cmd.c | linux/security/security.c | security_uring_cmd | 1 |
+| uring_cmd.c | linux/include/linux/lockdep.h | lockdep_assert_held | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | cmd_to_io_kiocb | 7 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_submit_flush_completions | 1 |
+| uring_cmd.c | linux/include/linux/stddef.h | offsetof | 1 |
+| uring_cmd.c | linux/io_uring/uring_cmd.h | io_uring_cmd_getsockopt | 1 |
+| uring_cmd.c | linux/io_uring/alloc_cache.h | io_alloc_cache_put | 1 |
+| uring_cmd.c | linux/io_uring/net.h | io_vec_free | 2 |
+| uring_cmd.c | linux/io_uring/net.h | io_import_reg_buf | 1 |
+| uring_cmd.c | linux/fs/ioctl.c | ioctl | 2 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_should_terminate_tw | 1 |
+| uring_cmd.c | linux/include/linux/list.h | hlist_add_head | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | req_set_fail | 2 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_req_task_work_add | 1 |
+| uring_cmd.c | linux/include/linux/slab.h | kfree | 2 |
+| uring_cmd.c | linux/io_uring/uring_cmd.h | uring_cmd | 2 |
+| uring_cmd.c | linux/io_uring/uring_cmd.h | io_uring_cmd_prep_setup | 1 |
+| uring_cmd.c | linux/net/socket.c | do_sock_getsockopt | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_kiocb_to_cmd | 6 |
+| uring_cmd.c | linux/include/linux/uaccess.h | u64_to_user_ptr | 2 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_req_queue_iowq | 1 |
+| uring_cmd.c | linux/net/socket.c | do_sock_setsockopt | 1 |
+| uring_cmd.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_uring_alloc_async_data | 1 |
+| uring_cmd.c | linux/include/linux/compiler.h | READ_ONCE | 12 |
+| uring_cmd.c | linux/io_uring/uring_cmd.h | uring_sqe_size | 1 |
+| uring_cmd.c | linux/include/linux/list.h | hlist_del | 1 |
+| uring_cmd.c | linux/io_uring/net.h | io_import_reg_vec | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_ring_submit_lock | 2 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_req_complete_defer | 1 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_req_set_cqe32_extra | 1 |
+| uring_cmd.c | linux/io_uring/uring_cmd.h | io_req_uring_cleanup | 3 |
+| uring_cmd.c | linux/io_uring/io_uring.h | io_ring_submit_unlock | 2 |
+| uring_cmd.c | linux/io_uring/uring_cmd.h | io_uring_cmd_del_cancelable | 1 |
+# Corrected IO_uring Function Dependencies for waitid.c and xattr.c
+| waitid.c | linux/io_uring/futex.h | io_tw_lock | 1 |
+| waitid.c | linux/io_uring/io_uring.h | io_is_compat | 1 |
+| waitid.c | linux/io_uring/waitid.h | io_waitid_finish | 2 |
+| waitid.c | linux/io_uring/io_uring.h | io_ring_submit_unlock | 3 |
+| waitid.c | linux/include/linux/atomic.h | atomic_sub_return | 1 |
+| waitid.c | linux/io_uring/io_uring.h | io_kiocb_to_cmd | 8 |
+| waitid.c | linux/io_uring/io_uring.h | io_req_task_work_add | 2 |
+| waitid.c | linux/io_uring/io_uring.h | io_req_queue_tw_complete | 1 |
+| waitid.c | linux/io_uring/waitid.h | io_waitid_complete | 2 |
+| waitid.c | linux/include/linux/compiler.h | unlikely | 2 |
+| waitid.c | linux/io_uring/cancel.h | io_cancel_remove_all | 1 |
+| waitid.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 1 |
+| waitid.c | linux/io_uring/io_uring.h | io_req_task_complete | 1 |
+| waitid.c | linux/include/linux/spinlock.h | spin_unlock_irq | 1 |
+| waitid.c | linux/io_uring/waitid.h | io_waitid_compat_copy_si | 1 |
+| waitid.c | linux/include/linux/atomic.h | atomic_or | 1 |
+| waitid.c | linux/include/linux/list.h | hlist_add_head | 1 |
+| waitid.c | linux/include/linux/atomic.h | atomic_fetch_inc | 2 |
+| waitid.c | linux/kernel/wait.c | kernel_waitid_prepare | 1 |
+| waitid.c | linux/io_uring/io_uring.h | req_set_fail | 2 |
+| waitid.c | linux/include/linux/uaccess.h | unsafe_put_user | 12 |
+| waitid.c | linux/io_uring/io_uring.h | io_uring_alloc_async_data | 1 |
+| waitid.c | linux/include/linux/uaccess.h | u64_to_user_ptr | 1 |
+| waitid.c | linux/io_uring/waitid.h | io_waitid_copy_si | 1 |
+| waitid.c | linux/include/linux/list.h | list_del_init | 2 |
+| waitid.c | linux/kernel/wait.c | __do_wait | 3 |
+| waitid.c | linux/io_uring/cancel.h | io_cancel_remove | 1 |
+| waitid.c | linux/io_uring/waitid.h | io_waitid_drop_issue_ref | 2 |
+| waitid.c | linux/kernel/pid.c | pid_child_should_wake | 1 |
+| waitid.c | linux/include/linux/spinlock.h | spin_lock_irq | 1 |
+| waitid.c | linux/io_uring/waitid.h | io_waitid_free | 1 |
+| waitid.c | linux/include/linux/wait.h | init_waitqueue_func_entry | 1 |
+| waitid.c | linux/io_uring/io_uring.h | io_req_set_res | 2 |
+| waitid.c | linux/include/linux/wait.h | add_wait_queue | 2 |
+| waitid.c | linux/include/linux/atomic.h | atomic_set | 1 |
+| waitid.c | linux/include/linux/compiler.h | READ_ONCE | 4 |
+| waitid.c | linux/include/linux/uaccess.h | user_write_access_begin | 2 |
+| waitid.c | linux/kernel/pid.c | put_pid | 1 |
+| waitid.c | linux/include/linux/atomic.h | atomic_read | 2 |
+| waitid.c | linux/include/linux/lockdep.h | lockdep_assert_held | 1 |
+| waitid.c | linux/include/linux/kernel.h | container_of | 2 |
+| waitid.c | linux/include/linux/bits.h | BIT | 1 |
+| waitid.c | linux/include/linux/wait.h | remove_wait_queue | 3 |
+| waitid.c | linux/include/linux/list.h | hlist_del_init | 2 |
+| waitid.c | linux/io_uring/io_uring.h | io_ring_submit_lock | 1 |
+| waitid.c | linux/include/linux/slab.h | kfree | 1 |
+| waitid.c | linux/include/linux/uaccess.h | user_write_access_end | 2 |
+| waitid.c | linux/include/linux/bitfield.h | GENMASK | 1 |
+| xattr.c | linux/include/linux/slab.h | kmalloc | 2 |
+| xattr.c | linux/include/linux/compiler.h | unlikely | 2 |
+| xattr.c | linux/include/linux/uaccess.h | u64_to_user_ptr | 6 |
+| xattr.c | linux/fs/xattr.c | setxattr_copy | 1 |
+| xattr.c | linux/io_uring/io_uring.h | io_kiocb_to_cmd | 9 |
+| xattr.c | linux/fs/namei.h | getname | 2 |
+| xattr.c | linux/io_uring/xattr.h | io_xattr_finish | 4 |
+| xattr.c | linux/io_uring/xattr.h | import_xattr_name | 1 |
+| xattr.c | linux/fs/xattr.c | file_setxattr | 1 |
+| xattr.c | linux/fs/xattr.c | file_getxattr | 1 |
+| xattr.c | linux/io_uring/xattr.h | __io_getxattr_prep | 2 |
+| xattr.c | linux/io_uring/xattr.h | __io_setxattr_prep | 2 |
+| xattr.c | linux/io_uring/io_uring.h | io_req_set_res | 1 |
+| xattr.c | linux/include/linux/slab.h | kfree | 3 |
+| xattr.c | linux/include/linux/err.h | PTR_ERR | 2 |
+| xattr.c | linux/io_uring/xattr.h | io_xattr_cleanup | 1 |
+| xattr.c | linux/include/linux/kernel.h | WARN_ON_ONCE | 4 |
+| xattr.c | linux/fs/xattr.c | filename_setxattr | 1 |
+| xattr.c | linux/include/linux/err.h | IS_ERR | 2 |
+| xattr.c | linux/fs/namei.h | putname | 1 |
+| xattr.c | linux/include/linux/compiler.h | READ_ONCE | 10 |
+| xattr.c | linux/fs/xattr.c | filename_getxattr | 1 |
+| xattr.c | linux/mm/util.c | kvfree | 1 |
+| tctx.h | linux/include/linux/compiler.h | likely | 1 |
+| tctx.h | io_uring/tctx.h | __io_uring_add_tctx_node_from_submit | 1 |
+| timeout.c | io_uring/timeout.c | io_timeout_update | 1 |
+| | linux/include/linux/list.h | INIT_LIST_HEAD | 1 |
+| | io_uring/timeout.c | io_flush_killed_timeouts | 2 |
+| | linux/include/linux/spinlock.h | raw_spin_unlock_irqrestore | 2 |
+| | io_uring/futex.c | io_req_task_complete | 4 |
+| | io_uring/timeout.c | io_kill_timeout | 2 |
+| | linux/include/linux/list.h | list_first_entry | 1 |
+| | io_uring/futex.c | io_tw_lock | 1 |
+| | io_uring/timeout.c | io_linked_timeout_update | 1 |
+| | io_uring/advise.c | io_kiocb_to_cmd | 14 |
+| | linux/include/linux/spinlock.h | raw_spin_unlock_irq | 8 |
+| | io_uring/msg_ring.c | io_req_queue_tw_complete | 3 |
+| | linux/include/linux/bitops.h | hweight32 | 2 |
+| | io_uring/io_uring.c | io_req_task_queue_fail | 1 |
+| | linux/include/linux/lockdep.h | __must_hold | 10 |
+| | io_uring/timeout.c | __io_timeout_prep | 2 |
+| | io_uring/net.c | io_uring_alloc_async_data | 1 |
+| | linux/include/linux/list.h | list_entry | 1 |
+| | linux/include/linux/err.h | IS_ERR | 2 |
+| | linux/include/linux/compiler.h | READ_ONCE | 4 |
+| | linux/include/linux/time.h | timespec64_to_ktime | 5 |
+| | linux/include/linux/spinlock.h | spin_lock | 2 |
+| | linux/include/linux/list.h | list_for_each_entry | 2 |
+| | io_uring/io_uring.c | io_for_each_link | 1 |
+| | linux/include/linux/list.h | LIST_HEAD | 2 |
+| | linux/include/linux/container_of.h | container_of | 2 |
+| | io_uring/timeout.c | io_disarm_linked_timeout | 1 |
+| | io_uring/advise.c | req_set_fail | 3 |
+| | io_uring/io_uring.c | io_queue_next | 1 |
+| | linux/include/linux/hrtimer.h | hrtimer_try_to_cancel | 4 |
+| | io_uring/timeout.c | io_fail_links | 1 |
+| | io_uring/cancel.c | io_try_cancel | 1 |
+| | io_uring/timeout.c | io_remove_next_linked | 3 |
+| | io_uring/cancel.c | io_cancel_req_match | 1 |
+| | io_uring/cancel.c | io_timeout_cancel | 1 |
+| | io_uring/timeout.c | io_is_timeout_noseq | 3 |
+| | io_uring/refs.h | req_ref_inc_not_zero | 1 |
+| | linux/include/linux/kcsan.h | data_race | 1 |
+| | linux/include/linux/list.h | list_empty | 2 |
+| | io_uring/io_uring.c | io_free_req | 1 |
+| | linux/include/linux/list.h | list_del_init | 3 |
+| | linux/include/linux/list.h | list_for_each_prev | 1 |
+| | io_uring/net.c | io_req_post_cqe | 1 |
+| | io_uring/timeout.c | io_put_req | 2 |
+| | linux/include/linux/err.h | PTR_ERR | 2 |
+| | linux/include/linux/uaccess.h | u64_to_user_ptr | 2 |
+| | linux/include/linux/spinlock.h | spin_unlock | 2 |
+| | linux/include/linux/atomic.h | atomic_read | 4 |
+| | linux/include/linux/compiler.h | unlikely | 3 |
+| | linux/include/linux/spinlock.h | raw_spin_lock_irq | 8 |
+| | linux/include/linux/atomic.h | atomic_set | 2 |
+| | io_uring/futex.c | io_req_task_work_add | 3 |
+| | io_uring/timeout.c | io_timeout_extract | 2 |
+| | linux/include/linux/bug.h | WARN_ON_ONCE | 2 |
+| | linux/include/linux/err.h | ERR_PTR | 2 |
+| | io_uring/refs.h | req_ref_put_and_test | 1 |
+| | linux/include/linux/list.h | list_add_tail | 2 |
+| | io_uring/timeout.c | io_timeout_finish | 1 |
+| | io_uring/timeout.c | trace_io_uring_fail_link | 1 |
+| | linux/include/linux/hrtimer.h | hrtimer_start | 5 |
+| | linux/include/linux/list.h | list_for_each_entry_safe | 2 |
+| | linux/include/linux/hrtimer.h | hrtimer_setup | 4 |
+| | linux/include/linux/spinlock.h | raw_spin_lock_irqsave | 2 |
+| | io_uring/io_uring.c | io_should_terminate_tw | 1 |
+| | io_uring/timeout.c | io_timeout_get_clock | 4 |
+| | io_uring/timeout.c | io_translate_timeout_mode | 2 |
+| | io_uring/timeout.c | io_match_task | 1 |
+| | linux/include/linux/list.h | list_del | 2 |
+| | io_uring/msg_ring.c | cmd_to_io_kiocb | 6 |
+| | linux/include/linux/list.h | list_add | 2 |
+| | io_uring/net.c | req_has_async_data | 1 |
+| | io_uring/advise.c | io_req_set_res | 5 |
+| | linux/include/linux/list.h | list_move_tail | 1 |
+| | linux/include/linux/time.h | get_timespec64 | 2 |
+| tctx.c | linux/include/linux/compiler.h | likely | 1 |
+| tctx.h | io_uring/tctx.h | __io_uring_add_tctx_node_from_submit | 1 |
+| timeout.c | io_uring/timeout.c | io_timeout_update | 1 |
+| | linux/include/linux/list.h | INIT_LIST_HEAD | 1 |
+| | io_uring/timeout.c | io_flush_killed_timeouts | 2 |
+| | linux/include/linux/spinlock.h | raw_spin_unlock_irqrestore | 2 |
+| | io_uring/futex.c | io_req_task_complete | 4 |
+| | io_uring/timeout.c | io_kill_timeout | 2 |
+| | linux/include/linux/list.h | list_first_entry | 1 |
+| | io_uring/futex.c | io_tw_lock | 1 |
+| | io_uring/timeout.c | io_linked_timeout_update | 1 |
+| | io_uring/advise.c | io_kiocb_to_cmd | 14 |
+| | linux/include/linux/spinlock.h | raw_spin_unlock_irq | 8 |
+| | io_uring/msg_ring.c | io_req_queue_tw_complete | 3 |
+| | linux/include/linux/bitops.h | hweight32 | 2 |
+| | io_uring/io_uring.c | io_req_task_queue_fail | 1 |
+| | linux/include/linux/lockdep.h | __must_hold | 10 |
+| | io_uring/timeout.c | __io_timeout_prep | 2 |
+| | io_uring/net.c | io_uring_alloc_async_data | 1 |
+| | linux/include/linux/list.h | list_entry | 1 |
+| | linux/include/linux/err.h | IS_ERR | 2 |
+| | linux/include/linux/compiler.h | READ_ONCE | 4 |
+| | linux/include/linux/time.h | timespec64_to_ktime | 5 |
+| | linux/include/linux/spinlock.h | spin_lock | 2 |
+| | linux/include/linux/list.h | list_for_each_entry | 2 |
+| | io_uring/io_uring.c | io_for_each_link | 1 |
+| | linux/include/linux/list.h | LIST_HEAD | 2 |
+| | linux/include/linux/container_of.h | container_of | 2 |
+| | io_uring/timeout.c | io_disarm_linked_timeout | 1 |
+| | io_uring/advise.c | req_set_fail | 3 |
+| | io_uring/io_uring.c | io_queue_next | 1 |
+| | linux/include/linux/hrtimer.h | hrtimer_try_to_cancel | 4 |
+| | io_uring/timeout.c | io_fail_links | 1 |
+| | io_uring/cancel.c | io_try_cancel | 1 |
+| | io_uring/timeout.c | io_remove_next_linked | 3 |
+| | io_uring/cancel.c | io_cancel_req_match | 1 |
+| | io_uring/cancel.c | io_timeout_cancel | 1 |
+| | io_uring/timeout.c | io_is_timeout_noseq | 3 |
+| | io_uring/refs.h | req_ref_inc_not_zero | 1 |
+| | linux/include/linux/kcsan.h | data_race | 1 |
+| | linux/include/linux/list.h | list_empty | 2 |
+| | io_uring/io_uring.c | io_free_req | 1 |
+| | linux/include/linux/list.h | list_del_init | 3 |
+| | linux/include/linux/list.h | list_for_each_prev | 1 |
+| | io_uring/net.c | io_req_post_cqe | 1 |
+| | io_uring/timeout.c | io_put_req | 2 |
+| | linux/include/linux/err.h | PTR_ERR | 2 |
+| | linux/include/linux/uaccess.h | u64_to_user_ptr | 2 |
+| | linux/include/linux/spinlock.h | spin_unlock | 2 |
+| | linux/include/linux/atomic.h | atomic_read | 4 |
+| | linux/include/linux/compiler.h | unlikely | 3 |
+| | linux/include/linux/spinlock.h | raw_spin_lock_irq | 8 |
+| | linux/include/linux/atomic.h | atomic_set | 2 |
+| | io_uring/futex.c | io_req_task_work_add | 3 |
+| | io_uring/timeout.c | io_timeout_extract | 2 |
+| | linux/include/linux/bug.h | WARN_ON_ONCE | 2 |
+| | linux/include/linux/err.h | ERR_PTR | 2 |
+| | io_uring/refs.h | req_ref_put_and_test | 1 |
+| | linux/include/linux/list.h | list_add_tail | 2 |
+| | io_uring/timeout.c | io_timeout_finish | 1 |
+| | io_uring/timeout.c | trace_io_uring_fail_link | 1 |
+| | linux/include/linux/hrtimer.h | hrtimer_start | 5 |
+| | linux/include/linux/list.h | list_for_each_entry_safe | 2 |
+| | linux/include/linux/hrtimer.h | hrtimer_setup | 4 |
+| | linux/include/linux/spinlock.h | raw_spin_lock_irqsave | 2 |
+| | io_uring/io_uring.c | io_should_terminate_tw | 1 |
+| | io_uring/timeout.c | io_timeout_get_clock | 4 |
+| | io_uring/timeout.c | io_translate_timeout_mode | 2 |
+| | io_uring/timeout.c | io_match_task | 1 |
+| | linux/include/linux/list.h | list_del | 2 |
+| | io_uring/msg_ring.c | cmd_to_io_kiocb | 6 |
+| | linux/include/linux/list.h | list_add | 2 |
+| | io_uring/net.c | req_has_async_data | 1 |
+| | io_uring/advise.c | io_req_set_res | 5 |
+| | linux/include/linux/list.h | list_move_tail | 1 |
+| | linux/include/linux/time.h | get_timespec64 | 2 |
+| sqpoll.c | linux/include/linux/atomic.h | atomic_andnot | 1 |
+| | linux/include/linux/refcount.h | refcount_dec_and_test | 1 |
+| | io_uring/io_uring.c | io_sq_thread_park | 3 |
+| | io_uring/sqpoll.c | io_attach_sq_data | 1 |
+| | linux/include/linux/cpumask.h | cpumask_of | 1 |
+| | io_uring/filetable.c | io_is_uring_fops | 2 |
+| | linux/include/linux/compiler.h | likely | 1 |
+| | linux/include/linux/atomic.h | atomic_set | 1 |
+| | io_uring/sqpoll.c | io_get_sq_data | 1 |
+| | linux/include/linux/err.h | IS_ERR | 3 |
+| | linux/include/linux/completion.h | wait_for_completion | 1 |
+| | linux/include/linux/wait.h | wq_has_sleeper | 1 |
+| | linux/include/linux/compiler.h | unlikely | 1 |
+| | linux/include/linux/atomic.h | atomic_dec_return | 1 |
+| | linux/include/linux/bitops.h | set_bit | 3 |
+| | linux/include/linux/cpumask.h | cpumask_test_cpu | 1 |
+| | linux/include/linux/bitops.h | clear_bit | 1 |
+| | linux/include/linux/compiler.h | __releases | 1 |
+| | io_uring/io_uring.h | percpu_ref_is_dying | 1 |
+| | linux/include/linux/cpumask.h | free_cpumask_var | 2 |
+| | linux/include/linux/compiler.h | READ_ONCE | 1 |
+| | io_uring/sqpoll.c | io_sq_tw | 2 |
+| | linux/include/linux/wait.h | init_waitqueue_head | 1 |
+| | io_uring/sqpoll.c | io_sqd_handle_event | 1 |
+| | linux/include/linux/atomic.h | atomic_read | 2 |
+| | linux/include/linux/wait.h | DEFINE_WAIT | 2 |
+| | linux/include/linux/sched/cpu.h | set_cpus_allowed_ptr | 2 |
+| | linux/include/linux/atomic.h | atomic_inc | 1 |
+| | io_uring/io_uring.c | tctx_task_work_run | 1 |
+| | linux/include/linux/refcount.h | refcount_inc | 1 |
+| | io_uring/io_uring.c | io_handle_tw_list | 1 |
+| | linux/include/linux/wait.h | finish_wait | 2 |
+| | linux/include/linux/cred.h | revert_creds | 1 |
+| | linux/include/linux/list.h | INIT_LIST_HEAD | 1 |
+| | linux/include/linux/wait.h | wait_event | 1 |
+| | io_uring/io_uring.c | io_sq_thread_finish | 1 |
+| | linux/include/linux/mutex.h | mutex_init | 1 |
+| | linux/include/linux/compiler.h | __acquires | 1 |
+| | io_uring/sqpoll.c | io_sqd_update_thread_idle | 2 |
+| | io_uring/io_uring.c | io_sqring_entries | 2 |
+| | linux/include/linux/audit.h | audit_uring_exit | 1 |
+| | linux/include/linux/sched.h | need_resched | 1 |
+| | linux/include/linux/signal.h | get_signal | 1 |
+| | linux/include/linux/list.h | list_for_each_entry | 6 |
+| | linux/include/linux/jiffies.h | msecs_to_jiffies | 1 |
+| | linux/include/linux/list.h | list_add | 1 |
+| | io_uring/sqpoll.c | io_napi_sqpoll_busy_poll | 1 |
+| | io_uring/io_uring.c | io_uring_cancel_generic | 1 |
+| | io_uring/io_uring.c | io_submit_sqes | 1 |
+| | linux/include/linux/err.h | ERR_PTR | 5 |
+| | linux/include/linux/atomic.h | atomic_or | 2 |
+| | linux/include/linux/sched.h | wake_up_process | 2 |
+| | linux/include/linux/err.h | PTR_ERR | 3 |
+| | linux/include/linux/kcsan.h | data_race | 1 |
+| | linux/include/linux/mutex.h | mutex_unlock | 8 |
+| | linux/include/linux/cpumask.h | alloc_cpumask_var | 1 |
+| | linux/include/linux/sched.h | schedule | 2 |
+| | linux/include/linux/bug.h | WARN_ON_ONCE | 5 |
+| | linux/include/linux/cpuset.h | cpuset_cpus_allowed | 1 |
+| | linux/include/linux/sched.h | cond_resched | 1 |
+| | linux/include/linux/resource.h | getrusage | 2 |
+| | linux/include/linux/wait.h | wq_list_empty | 4 |
+| | linux/include/linux/jiffies.h | time_after | 1 |
+| | linux/include/linux/cpumask.h | cpu_online | 1 |
+| | io_uring/io-wq.c | io_run_task_work | 1 |
+| | io_uring/sqpoll.c | io_uring_alloc_task_context | 1 |
+| | io_uring/msg_ring.c | fd_empty | 2 |
+| | io_uring/io_uring.c | io_sq_thread_unpark | 3 |
+| | io_uring/sqpoll.c | io_sq_thread_stop | 1 |
+| | io_uring/msg_ring.c | fd_file | 3 |
+| | linux/include/linux/atomic.h | smp_mb__after_atomic | 1 |
+| | linux/include/linux/audit.h | audit_uring_entry | 1 |
+| | io_uring/register.c | io_wq_cpu_affinity | 1 |
+| | linux/include/linux/sched.h | wake_up_new_task | 1 |
+| | linux/include/linux/sched/task.h | set_task_comm | 1 |
+| | linux/include/linux/mutex.h | mutex_lock | 8 |
+| | io_uring/sqpoll.c | io_sq_update_worktime | 1 |
+| | io_uring/io_uring.c | io_do_iopoll | 1 |
+| | linux/include/linux/sched/task.h | get_task_struct | 1 |
+| | linux/include/linux/task_work.h | task_work_pending | 1 |
+| | linux/include/linux/bitops.h | test_bit | 3 |
+| | linux/include/linux/list.h | list_del_init | 1 |
+| | linux/include/linux/list.h | list_is_singular | 1 |
+| | linux/arch/x86/include/asm/smp.h | raw_smp_processor_id | 4 |
+| | io_uring/sqpoll.c | io_sq_tw_pending | 1 |
+| | linux/include/linux/rhashtable-types.h | CLASS | 2 |
+| | io_uring/napi.h | io_napi | 1 |
+| | io_uring/io_uring.c | io_sqring_full | 2 |
+| | linux/include/linux/string.h | snprintf | 1 |
+| | linux/include/linux/sched/task.h | put_task_struct | 2 |
+| | linux/include/linux/cred.h | get_current_cred | 1 |
+| | linux/include/linux/llist.h | llist_empty | 1 |
+| | io_uring/sqpoll.c | io_sqd_events_pending | 2 |
+| | linux/include/linux/slab.h | kfree | 1 |
+| | linux/include/linux/security.h | security_uring_sqpoll | 1 |
+| | linux/include/linux/wait.h | wake_up | 2 |
+| | linux/include/linux/completion.h | init_completion | 1 |
+| | io_uring/sqpoll.c | __io_sq_thread | 1 |
+| | linux/include/linux/slab.h | kzalloc | 1 |
+| | linux/include/linux/cred.h | override_creds | 1 |
+| | linux/include/linux/sched/signal.h | do_exit | 1 |
+| | linux/include/linux/minmax.h | max | 1 |
+| | io_uring/io-wq.c | create_io_thread | 1 |
+| | linux/include/linux/refcount.h | refcount_set | 1 |
+| | linux/include/linux/wait.h | prepare_to_wait | 2 |
+| | linux/include/linux/completion.h | complete | 2 |
+| | linux/include/linux/task_work.h | task_work_run | 1 |
+| | linux/include/linux/cred.h | current_cred | 1 |
+| | io_uring/register.c | io_put_sq_data | 1 |
+| | linux/include/linux/signal.h | signal_pending | 4 |
