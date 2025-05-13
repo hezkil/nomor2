@@ -743,8 +743,6 @@
 | | io_uring/register.c | io_register_files_update | 1 |
 | | io_uring/register.c | io_register_clone_buffers | 1 |
 | | linux/include/linux/cpumask.h | alloc_cpumask_var | 1 |
-| Source | Library | Function Utilized | Times Used |
-|--------|---------|-------------------|------------|
 | rw.c | io_uring/rw.c | rq_list_empty | 2 |
 | | io_uring/rw.c | io_write | 1 |
 | | linux/include/linux/slab.h | kfree | 1 |
