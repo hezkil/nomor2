@@ -1345,3 +1345,256 @@
 | | linux/include/linux/cred.h | current_cred | 1 |
 | | io_uring/register.c | io_put_sq_data | 1 |
 | | linux/include/linux/signal.h | signal_pending | 4 |
+| zcrx.c | linux/lib/find_bit.c | memchr_inv | 1 |
+| | io_uring/zcrx.c | io_zcrx_ifq_free | 2 |
+| | io_uring/zcrx.c | io_zcrx_ring_refill | 1 |
+| | io_uring/zcrx.c | io_zcrx_return_niov | 3 |
+| | linux/include/linux/skbuff.h | skb_frag_foreach_page | 1 |
+| | io_uring/kbuf.c | io_create_region_mmap_safe | 1 |
+| | linux/include/linux/net.h | sock_error | 1 |
+| | io_uring/zcrx.c | io_zcrx_get_rqe | 1 |
+| | linux/include/linux/highmem.h | kmap_local_page | 2 |
+| | linux/include/linux/device.h | put_device | 1 |
+| | io_uring/zcrx.c | io_allocate_rbuf_ring | 1 |
+| | io_uring/zcrx.c | net_iov_idx | 4 |
+| | io_uring/zcrx.c | io_zcrx_queue_cqe | 2 |
+| | io_uring/zcrx.c | net_iov_owner | 1 |
+| | linux/include/linux/page_pool.h | page_pool_unref_netmem | 2 |
+| | io_uring/zcrx.c | io_zcrx_recv_skb | 1 |
+| | io_uring/zcrx.c | net_mp_open_rxq | 1 |
+| | linux/include/linux/spinlock.h | spin_unlock_bh | 5 |
+| | io_uring/zcrx.c | io_zcrx_refill_slow | 1 |
+| | linux/include/linux/spinlock.h | spin_unlock | 2 |
+| | io_uring/zcrx.c | io_zcrx_free_area | 2 |
+| | linux/include/linux/bug.h | WARN_ON_ONCE | 5 |
+| | linux/include/linux/stddef.h | offsetof | 2 |
+| | io_uring/zcrx.c | netmem_to_net_iov | 2 |
+| | io_uring/zcrx.c | io_close_queue | 2 |
+| | linux/include/linux/atomic.h | atomic_set | 1 |
+| | linux/include/linux/bug.h | WARN_ON | 2 |
+| | io_uring/zcrx.c | __io_zcrx_get_free_niov | 2 |
+| | linux/include/linux/page_pool.h | page_pool_ref_netmem | 1 |
+| | io_uring/zcrx.c | net_mp_niov_set_page_pool | 1 |
+| | linux/include/linux/array_index.h | array_index_nospec | 1 |
+| | linux/include/linux/atomic.h | smp_store_release | 1 |
+| | io_uring/zcrx.c | net_mp_netmem_place_in_cache | 2 |
+| | linux/include/net/netlink.h | nla_nest_start | 1 |
+| | io_uring/io_uring.c | io_region_get_ptr | 1 |
+| | linux/include/net/sock.h | release_sock | 1 |
+| | io_uring/zcrx.c | io_zcrx_ifq_alloc | 1 |
+| | linux/include/linux/slab.h | kfree | 2 |
+| | linux/include/linux/dma-mapping.h | dma_unmap_page_attrs | 2 |
+| | io_uring/zcrx.c | io_zcrx_alloc_fallback | 1 |
+| | io_uring/zcrx.c | io_zcrx_sync_for_device | 2 |
+| | linux/include/linux/atomic.h | atomic_xchg | 1 |
+| | linux/include/linux/spinlock.h | spin_lock_bh | 4 |
+| | io_uring/zcrx.c | io_zcrx_scrub | 1 |
+| | linux/include/linux/atomic.h | atomic_dec | 1 |
+| | linux/include/linux/err.h | PTR_ERR | 1 |
+| | linux/include/linux/skbuff.h | skb_walk_frags | 1 |
+| | linux/include/linux/page_pool.h | page_pool_fragment_netmem | 1 |
+| | linux/include/linux/page_pool.h | page_pool_get_dma_addr_netmem | 2 |
+| | io_uring/zcrx.c | io_zcrx_return_niov_freelist | 2 |
+| | linux/include/linux/atomic.h | atomic_read | 2 |
+| | linux/include/linux/string.h | memcpy | 1 |
+| | io_uring/zcrx.c | io_zcrx_create_area | 1 |
+| | linux/include/linux/dma-mapping.h | __dma_sync_single_for_device | 1 |
+| | linux/include/linux/page_pool.h | page_pool_put_unrefed_netmem | 1 |
+| | io_uring/zcrx.c | io_zcrx_rqring_entries | 1 |
+| | io_uring/zcrx.c | __io_zcrx_unmap_area | 2 |
+| | linux/include/linux/lockdep.h | lockdep_assert_held | 3 |
+| | linux/include/linux/spinlock.h | spin_lock | 2 |
+| | linux/include/linux/uaccess.h | copy_from_user | 3 |
+| | io_uring/zcrx.c | net_mp_niov_clear_page_pool | 1 |
+| | io_uring/zcrx.c | io_zcrx_map_area | 1 |
+| | io_uring/zcrx.c | netmem_is_net_iov | 1 |
+| | linux/include/linux/uaccess.h | u64_to_user_ptr | 5 |
+| | linux/include/linux/dma-mapping.h | dma_map_page_attrs | 1 |
+| | linux/include/linux/err.h | IS_ERR | 1 |
+| | linux/include/linux/percpu-refcount.h | percpu_ref_put | 1 |
+| | linux/include/linux/dma-mapping.h | dma_mapping_error | 1 |
+| | linux/include/linux/netdevice.h | netdev_get_by_index | 1 |
+| | linux/include/linux/spinlock.h | spin_lock_init | 3 |
+| | io_uring/zcrx.c | net_iov_to_netmem | 8 |
+| | linux/include/linux/capability.h | capable | 1 |
+| | linux/include/net/netlink.h | nla_nest_end | 1 |
+| | linux/include/linux/compiler.h | likely | 1 |
+| | linux/include/linux/skbuff.h | skb_frag_page | 1 |
+| | io_uring/zcrx.c | io_get_user_counter | 4 |
+| | io_uring/zcrx.c | io_free_rbuf_ring | 1 |
+| | io_uring/zcrx.c | io_zcrx_put_niov_uref | 1 |
+| | linux/include/linux/netdevice.h | netdev_put | 2 |
+| | linux/include/linux/container_of.h | container_of | 1 |
+| | linux/include/linux/skbuff.h | skb_headlen | 4 |
+| | io_uring/zcrx.c | io_zcrx_recv_frag | 1 |
+| | io_uring/zcrx.c | io_zcrx_iov_page | 1 |
+| | linux/include/net/tcp.h | tcp_read_sock | 1 |
+| | linux/include/net/sock.h | sock_flag | 2 |
+| | linux/include/linux/dma-mapping.h | dma_dev_need_sync | 1 |
+| | io_uring/io_uring.c | io_free_region | 1 |
+| | io_uring/zcrx.c | io_zcrx_unmap_area | 1 |
+| | io_uring/zcrx.c | net_mp_niov_set_dma_addr | 2 |
+| | io_uring/zcrx.c | io_zcrx_get_niov_uref | 2 |
+| | linux/include/linux/device.h | get_device | 1 |
+| | linux/include/net/sock.h | lock_sock | 1 |
+| | io_uring/zcrx.c | io_zcrx_copy_frag | 1 |
+| | linux/include/net/sock.h | sock_rps_record_flow | 1 |
+| | linux/mm/slab.h | kvmalloc_array | 3 |
+| | io_uring/rsrc.c | io_buffer_validate | 1 |
+| | io_uring/zcrx.c | io_zcrx_copy_chunk | 2 |
+| | linux/include/linux/uaccess.h | copy_to_user | 3 |
+| | io_uring/zcrx.c | io_zcrx_drop_netdev | 2 |
+| | linux/mm/gup.c | unpin_user_pages | 1 |
+| | linux/include/linux/slab.h | kzalloc | 2 |
+| | io_uring/zcrx.c | io_zcrx_tcp_recvmsg | 1 |
+| | linux/include/linux/atomic.h | atomic_inc | 1 |
+| | linux/mm/gup.c | io_pin_pages | 1 |
+| | linux/mm/slab.h | kvfree | 4 |
+| | linux/include/linux/skbuff.h | skb_frag_off | 2 |
+| | io_uring/zcrx.c | io_zcrx_iov_to_area | 4 |
+| | linux/include/linux/atomic.h | smp_load_acquire | 1 |
+| | linux/include/linux/compiler.h | READ_ONCE | 1 |
+| | linux/include/linux/skbuff.h | skb_frag_is_net_iov | 1 |
+| | io_uring/zcrx.c | io_defer_get_uncommited_cqe | 1 |
+| | linux/include/linux/minmax.h | min_t | 4 |
+| | linux/include/linux/skbuff.h | skb_shinfo | 2 |
+| | linux/include/linux/percpu-refcount.h | percpu_ref_get | 1 |
+| | io_uring/zcrx.c | net_mp_close_rxq | 1 |
+| | linux/include/linux/skbuff.h | skb_frag_size | 1 |
+| | linux/include/linux/minmax.h | min | 1 |
+| | linux/include/linux/highmem.h | kunmap_local | 2 |
+| | linux/include/linux/compiler.h | unlikely | 10 |
+| | linux/include/linux/log2.h | roundup_pow_of_two | 1 |
+| kbuf.c | linux/include/linux/minmax.h | min_t | 3 |
+| kbuf.c | io_uring/io_uring.c | io_kbuf_drop_legacy | 1 |
+| kbuf.c | linux/include/linux/overflow.h | check_add_overflow | 1 |
+| kbuf.c | linux/arch/x86/include/asm/uaccess.h | access_ok | 1 |
+| kbuf.c | io_uring/cancel.c | io_ring_submit_unlock | 5 |
+| kbuf.c | io_uring/kbuf.c | io_buffer_add_list | 2 |
+| kbuf.c | linux/include/linux/lockdep.h | lockdep_assert_held | 6 |
+| kbuf.c | io_uring/kbuf.c | io_kbuf_commit | 3 |
+| kbuf.c | io_uring/kbuf.c | io_provided_buffer_select | 2 |
+| kbuf.c | io_uring/cancel.c | io_ring_submit_lock | 5 |
+| kbuf.c | linux/arch/x86/include/asm/uaccess.h | copy_to_user | 1 |
+| kbuf.c | linux/include/linux/slab.h | kzalloc | 2 |
+| kbuf.c | linux/arch/x86/include/asm/uaccess.h | copy_from_user | 3 |
+| kbuf.c | io_uring/kbuf.c | io_kbuf_inc_commit | 1 |
+| kbuf.c | linux/include/linux/list.h | list_first_entry | 2 |
+| kbuf.c | io_uring/advise.c | io_req_set_res | 2 |
+| kbuf.c | linux/include/linux/build_bug.h | WARN_ON_ONCE | 2 |
+| kbuf.c | linux/include/linux/page.h | PAGE_ALIGN | 1 |
+| kbuf.c | linux/include/linux/kernel.h | ARRAY_SIZE | 1 |
+| kbuf.c | io_uring/kbuf.c | io_ring_head_to_buf | 4 |
+| kbuf.c | io_uring/kbuf.c | io_destroy_bl | 1 |
+| kbuf.c | io_uring/kbuf.c | io_add_buffers | 1 |
+| kbuf.c | linux/include/linux/xarray.h | xa_store | 1 |
+| kbuf.c | linux/include/linux/slab.h | kfree | 6 |
+| kbuf.c | linux/include/linux/sched.h | cond_resched | 2 |
+| kbuf.c | io_uring/io_uring.c | io_region_get_ptr | 1 |
+| kbuf.c | linux/include/linux/compiler.h | smp_load_acquire | 2 |
+| kbuf.c | linux/include/linux/string.h | memset | 2 |
+| kbuf.c | io_uring/kbuf.c | io_ring_buffers_peek | 2 |
+| kbuf.c | io_uring/kbuf.c | io_create_region_mmap_safe | 1 |
+| kbuf.c | linux/include/linux/compiler.h | READ_ONCE | 8 |
+| kbuf.c | linux/include/linux/overflow.h | check_mul_overflow | 1 |
+| kbuf.c | linux/include/linux/compiler.h | likely | 1 |
+| kbuf.c | io_uring/kbuf.c | io_buffer_get_list | 9 |
+| kbuf.c | linux/include/linux/xarray.h | xa_err | 1 |
+| kbuf.c | io_uring/advise.c | io_kiocb_to_cmd | 4 |
+| kbuf.c | linux/include/linux/minmax.h | min_not_zero | 1 |
+| kbuf.c | io_uring/advise.c | req_set_fail | 2 |
+| kbuf.c | linux/include/linux/compiler.h | unlikely | 11 |
+| kbuf.c | io_uring/kbuf.c | __io_put_kbuf_ring | 1 |
+| kbuf.c | linux/include/linux/xarray.h | xa_find | 1 |
+| kbuf.c | io_uring/kbuf.c | io_put_bl | 3 |
+| kbuf.c | linux/include/linux/list.h | list_add | 1 |
+| kbuf.c | io_uring/kbuf.c | __io_remove_buffers | 2 |
+| kbuf.c | linux/include/linux/xarray.h | xa_load | 2 |
+| kbuf.c | linux/include/linux/flex_array.h | flex_array_size | 1 |
+| kbuf.c | linux/include/linux/list.h | INIT_LIST_HEAD | 2 |
+| kbuf.c | linux/include/linux/list.h | list_empty | 4 |
+| kbuf.c | linux/include/linux/xarray.h | xa_erase | 3 |
+| kbuf.c | io_uring/kbuf.c | scoped_guard | 3 |
+| kbuf.c | io_uring/io_uring.c | io_file_can_poll | 1 |
+| kbuf.c | io_uring/kbuf.c | io_provided_buffers_select | 2 |
+| kbuf.c | linux/include/linux/list.h | list_add_tail | 1 |
+| kbuf.c | linux/include/linux/list.h | list_del | 2 |
+| kbuf.c | io_uring/io_uring.c | io_free_region | 2 |
+| kbuf.c | linux/include/linux/slab.h | kmalloc | 1 |
+| kbuf.c | io_uring/kbuf.c | io_ring_buffer_select | 1 |
+| kbuf.c | io_uring/io_uring.c | guard | 1 |
+| kbuf.c | linux/include/linux/types.h | u64_to_user_ptr | 4 |
+| kbuf.c | linux/include/linux/slab.h | kmalloc_array | 1 |
+| kbuf.c | linux/include/linux/math.h | is_power_of_2 | 1 |
+| kbuf.c | linux/include/linux/minmax.h | min_t | 3 |
+| kbuf.c | io_uring/io_uring.c | io_kbuf_drop_legacy | 1 |
+| kbuf.c | linux/include/linux/overflow.h | check_add_overflow | 1 |
+| kbuf.c | linux/arch/x86/include/asm/uaccess.h | access_ok | 1 |
+| kbuf.c | io_uring/io_uring.c | io_ring_submit_unlock | 5 |
+| kbuf.c | io_uring/kbuf.c | io_buffer_add_list | 2 |
+| kbuf.c | linux/include/linux/lockdep.h | lockdep_assert_held | 6 |
+| kbuf.c | io_uring/kbuf.c | io_kbuf_commit | 3 |
+| kbuf.c | io_uring/kbuf.c | io_provided_buffer_select | 2 |
+| kbuf.c | io_uring/io_uring.c | io_ring_submit_lock | 5 |
+| kbuf.c | linux/arch/x86/include/asm/uaccess.h | copy_to_user | 1 |
+| kbuf.c | linux/include/linux/slab.h | kzalloc | 2 |
+| kbuf.c | linux/arch/x86/include/asm/uaccess.h | copy_from_user | 3 |
+| kbuf.c | io_uring/kbuf.c | io_kbuf_inc_commit | 1 |
+| kbuf.c | linux/include/linux/list.h | list_first_entry | 2 |
+| kbuf.c | io_uring/advise.c | io_req_set_res | 2 |
+| kbuf.c | linux/include/linux/bug.h | WARN_ON_ONCE | 2 |
+| kbuf.c | linux/include/linux/mm.h | PAGE_ALIGN | 1 |
+| kbuf.c | linux/include/linux/kernel.h | ARRAY_SIZE | 1 |
+| kbuf.c | io_uring/kbuf.c | io_ring_head_to_buf | 4 |
+| kbuf.c | io_uring/kbuf.c | io_destroy_bl | 1 |
+| kbuf.c | io_uring/kbuf.c | io_add_buffers | 1 |
+| kbuf.c | linux/include/linux/xarray.h | xa_store | 1 |
+| kbuf.c | linux/include/linux/slab.h | kfree | 6 |
+| kbuf.c | linux/include/linux/sched.h | cond_resched | 2 |
+| kbuf.c | io_uring/io_uring.c | io_region_get_ptr | 1 |
+| kbuf.c | linux/include/asm-generic/barrier.h | smp_load_acquire | 2 |
+| kbuf.c | linux/include/linux/string.h | memset | 2 |
+| kbuf.c | io_uring/kbuf.c | io_ring_buffers_peek | 2 |
+| kbuf.c | io_uring/kbuf.c | io_create_region_mmap_safe | 1 |
+| kbuf.c | linux/include/linux/compiler.h | READ_ONCE | 8 |
+| kbuf.c | linux/include/linux/overflow.h | check_mul_overflow | 1 |
+| kbuf.c | linux/include/linux/compiler.h | likely | 1 |
+| kbuf.c | io_uring/kbuf.c | io_buffer_get_list | 9 |
+| kbuf.c | linux/include/linux/xarray.h | xa_err | 1 |
+| kbuf.c | io_uring/advise.c | io_kiocb_to_cmd | 4 |
+| kbuf.c | linux/include/linux/minmax.h | min_not_zero | 1 |
+| kbuf.c | io_uring/advise.c | req_set_fail | 2 |
+| kbuf.c | linux/include/linux/compiler.h | unlikely | 11 |
+| kbuf.c | io_uring/kbuf.c | __io_put_kbuf_ring | 1 |
+| kbuf.c | linux/include/linux/xarray.h | xa_find | 1 |
+| kbuf.c | io_uring/kbuf.c | io_put_bl | 3 |
+| kbuf.c | linux/include/linux/list.h | list_add | 1 |
+| kbuf.c | io_uring/kbuf.c | __io_remove_buffers | 2 |
+| kbuf.c | linux/include/linux/xarray.h | xa_load | 2 |
+| kbuf.c | linux/include/linux/flex_array.h | flex_array_size | 1 |
+| kbuf.c | linux/include/linux/list.h | INIT_LIST_HEAD | 2 |
+| kbuf.c | linux/include/linux/list.h | list_empty | 4 |
+| kbuf.c | linux/include/linux/xarray.h | xa_erase | 3 |
+| kbuf.c | linux/include/linux/scoped_guard.h | scoped_guard | 3 |
+| kbuf.c | io_uring/io_uring.c | io_file_can_poll | 1 |
+| kbuf.c | io_uring/kbuf.c | io_provided_buffers_select | 2 |
+| kbuf.c | linux/include/linux/list.h | list_add_tail | 1 |
+| kbuf.c | linux/include/linux/list.h | list_del | 2 |
+| kbuf.c | io_uring/io_uring.c | io_free_region | 2 |
+| kbuf.c | linux/include/linux/slab.h | kmalloc | 1 |
+| kbuf.c | io_uring/kbuf.c | io_ring_buffer_select | 1 |
+| kbuf.c | linux/include/linux/scoped_guard.h | guard | 1 |
+| kbuf.c | linux/include/linux/uaccess.h | u64_to_user_ptr | 4 |
+| kbuf.c | linux/include/linux/slab.h | kmalloc_array | 1 |
+| kbuf.c | linux/include/linux/bitops.h | is_power_of_2 | 1 |
+| kbuf.h | io_uring/kbuf.h | __io_put_kbufs | 2 |
+| kbuf.h | io_uring/kbuf.h | io_kbuf_recycle_legacy | 1 |
+| kbuf.h | io_uring/kbuf.h | io_kbuf_recycle_ring | 1 |
+| io-wq.h | linux/include/linux/atomic.h | atomic_read | 1 |
+| io-wq.h | io_uring/io-wq.h | io_wq_worker_sleeping | 1 |
+| io-wq.h | linux/include/linux/refcount.h | refcount_dec_and_test | 1 |
+| io-wq.h | linux/include/linux/sched.h | in_task | 1 |
+| io-wq.h | io_uring/io-wq.h | io_wq_worker_running | 1 |
+| io-wq.h | linux/include/linux/slab.h | kfree | 1 |
+| io-wq.h | io_uring/io-wq.c | io_wq_cancel_cb | 1 |
+| io-wq.h | io_uring/io-wq.c | __io_wq_is_hashed | 1 |
